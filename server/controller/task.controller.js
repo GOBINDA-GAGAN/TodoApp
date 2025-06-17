@@ -43,8 +43,29 @@ export const getTask = async (req, res) => {
   }
 };
 
-export const showTask = async (req, res) => {};
-export const editTask = async (req, res) => {
+export const getTaskById = async (req, res) => {
+  try {
+    const {id}=req.params
+    console.log(id);
+    
+
+    const taskData =  await AllTask.findById(id)
+   
+    res.status(200).json({
+      status: true,
+      data:taskData,
+    });
+    console.log(" All ok ✅");
+  } catch (error) {
+    res.status(500).json({
+      message: "created fall",
+      error: error.message,
+    });
+  }
+
+  
+};
+export const updateTask = async (req, res) => {
   
 };
 export const deleteTask = async (req, res) => {};
