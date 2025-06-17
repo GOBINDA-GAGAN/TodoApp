@@ -1,6 +1,6 @@
 # 📝 To-do App
 
-Welcome to the **Todo App** – your simple and powerful task manager!  
+Welcome to the **To-do App** – your simple and powerful task manager!  
 Manage your daily tasks efficiently with CRUD operations and status tracking.
 
 ---
