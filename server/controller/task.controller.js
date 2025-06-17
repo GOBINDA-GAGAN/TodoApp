@@ -42,8 +42,10 @@ export const getTask = async (req, res) => {
     });
   }
 };
+
+export const showTask = async (req, res) => {};
 export const editTask = async (req, res) => {
   
 };
 export const deleteTask = async (req, res) => {};
-export const showTask = async (req, res) => {};
+
