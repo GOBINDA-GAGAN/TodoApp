@@ -43,9 +43,9 @@ const ShowTask = () => {
           >
             <optgroup className="text-black">
               <option value="pending">Pending</option>
-              <option value="pending">Running</option>
-              <option value="pending">Completed</option>
-              <option value="pending">Failed</option>
+              <option value="running">Running</option>
+              <option value="completed">Completed</option>
+              <option value="failed">Failed</option>
             </optgroup>
           </select>
         </div>
