@@ -3,6 +3,7 @@ import dbConnection from "./config/dbConnection.js";
 import dotenv from "dotenv";
 import cors from "cors";
 
+import taskRoutes from "./routes/task.route.js";
 const app = express();
 dotenv.config();
 
@@ -18,7 +19,12 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
+// roues
+
+app.use("/api/task",taskRoutes)
+
+
+app.get("/test", (req, res) => {
   res.status(200).json({
     message: "welcome to TodoApp",
   });

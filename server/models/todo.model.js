@@ -4,11 +4,11 @@ const taskSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      require: true,
+      required: true,
     },
     description: {
       type: String,
-      require: true,
+      required: true,
     },
 
     status: {
@@ -22,4 +22,4 @@ const taskSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("All_Todo", taskSchema);
+export default mongoose.model("AllTask", taskSchema);
